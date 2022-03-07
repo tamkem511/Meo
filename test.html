@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <marquee>Chúc Mừng Ngày Quốc Tế Phụ Nữ</marquee>
+    <div id="formClick">
+        <button>
+            <a href="index.html">
+                Mèo click vào đây để xem điều đặc biệt nhé 
+            </a>
+        </button>
+    </div>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: url(img/anh4.jpg);
+            background-repeat: no-repeat;
+            background-position: 0px -300px;
+            background-size: 100% 1123px;
+        }
+        @keyframes shake {
+    0% { transform: translate(5px, 5px) rotate(0deg); }
+    10% { transform: translate(-5px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(5px, -5px) rotate(1deg); }
+    50% { transform: translate(-5px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 5px) rotate(0deg); }
+    70% { transform: translate(3px, 5px) rotate(-1deg); }
+    80% { transform: translate(-5px, -5px) rotate(1deg); }
+    90% { transform: translate(5px, 2px) rotate(0deg); }
+    100% { transform: translate(5px, -2px) rotate(-1deg); }
+  }
+        #formClick{
+            position: relative;
+            top: 250px;
+            left: 400px;
+        }
+        #formClick button{
+            width: 380px;
+            height: 50px;
+            background-color: tomato;
+        }
+
+        #formClick button:hover{
+            animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+        }
+        #formClick button a{
+            font-size:18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration:none;
+            font-weight: bold;
+            color: rgb(0, 255, 191);
+            
+        }
+
+        marquee{
+            padding: 5px;
+            width:100%;
+            height:30px;
+            font-size:18px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            box-sizing: border-box;
+        }
+    </style>
+</body>
+</html>
